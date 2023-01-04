@@ -1,0 +1,12 @@
+@import "./reset";
+@import "./variables";
+@import "./global";
+@import "./fonts";
+@import "./app";
+
+.main {
+    max-width: var(--max-content-width);
+    margin: 0 auto;
+    padding: 0 10px;
+    contain: paint;
+}

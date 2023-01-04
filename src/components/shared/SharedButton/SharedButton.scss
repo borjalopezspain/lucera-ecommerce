@@ -1,0 +1,80 @@
+.shared-button {
+    --button-min-height: 40px;
+    --icon-width: 24px;
+    --icon-height: 24px;
+    --icon-margin-right: 5px;
+
+    background-color: var(--primary);
+    padding: 8px 25px;
+    font-weight: bold;
+    border-radius: calc(var(--button-min-height) / 2);
+    cursor: pointer;
+    transition: all .3s ease;
+    &:hover {
+        filter: brightness(120%);
+        transform: translateY(-2px);
+    }
+    &--disabled {
+        cursor: default;
+        transition: none;
+        &:hover {
+            filter: none;
+            transform: translateY(0);
+        }
+    }
+    &--only-icon {
+        padding: 0;
+        background-color: transparent;
+        border-radius: 0;
+        transition: none;
+        &:hover {
+            filter: none;
+            transform: translateY(0);
+        }
+        .button-content__icon {
+            --icon-width: auto;
+            --icon-height: auto;
+            --icon-margin-right: 0;
+        }
+    }
+
+    & .button-content {
+        display: flex;
+
+        &__icon {
+            margin-right: var(--icon-margin-right);
+            width: var(--icon-width);
+            height: var(--icon-height);
+
+            svg {
+                max-width: var(--icon-width);
+                max-height: var(--icon-height);
+            }
+
+            &--size-xs {
+                --icon-width: 12px;
+                --icon-height: 12px;
+            }
+
+            &--size-s {
+                --icon-width: 16px;
+                --icon-height: 16px;
+            }
+
+            &--size-l {
+                --icon-width: 28px;
+                --icon-height: 28px;
+            }
+
+            &--size-xl {
+                --icon-width: 32px;
+                --icon-height: 32px;
+            }
+
+            &--size-xxl {
+                --icon-width: 40px;
+                --icon-height: 40px;
+            }
+        }
+    }
+}

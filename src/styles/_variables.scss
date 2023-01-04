@@ -1,0 +1,23 @@
+:root {
+    --primary: #0fa;
+    --secondary: #002c80;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+
+    --text-color: #001a4d;
+
+    --max-content-width: 1500px;
+}
+
+/* Responsive */
+$mobile-small: "only screen and (min-width: 480px)";
+$mobile: "only screen and (min-width: 660px)";
+$tablet: "only screen and (min-width: 768px)";
+$tablet-landscape: "only screen and (min-width: 1024px)";
+$desktop-regular: "only screen and (min-width: 1200px)";
+$desktop-big: "only screen and (min-width: 1550px)";
+$ie: "all and (-ms-high-contrast: none), (-ms-high-contrast: active)";

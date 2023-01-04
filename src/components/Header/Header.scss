@@ -1,0 +1,22 @@
+@import "../../styles/variables";
+.header {
+    padding: 10px;
+    background-color: var(--dark);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__text {
+        color: var(--light);
+    }
+    &__nav {
+        .cart {
+            width: 30px;
+            color: var(--light);
+            cursor: pointer;
+
+            @media #{$mobile} {
+                display: none;
+            }
+        }
+    }
+}
